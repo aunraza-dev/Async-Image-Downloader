@@ -1,4 +1,4 @@
-# Asynchronous Image Downloader
+# Async Image Downloader
 
 This repository contains a Python script for asynchronously downloading images from a list of URLs using asyncio, aiohttp, and aiofiles. The script is designed to efficiently fetch multiple images concurrently, making it suitable for applications where large numbers of images need to be downloaded quickly.
 
@@ -24,7 +24,7 @@ Prepare a text file named urls-seperated.txt containing the list of image URLs, 
 
 #### Run the script:
 ```bash
-python3 image_downloader.py
+python3 main.py
 ```
 Once the script finishes execution, the downloaded images will be saved in a directory named img-seperated.
 ## Requirements
