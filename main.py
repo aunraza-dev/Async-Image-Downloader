@@ -32,11 +32,11 @@ async def download_images(urls, path):
 async def main():
     start_time = time.time()
 
-    async with aiofiles.open('urls.txt', 'r') as f:
+    async with aiofiles.open('urls-seperated.txt', 'r') as f:
         urls = await f.read()
     urls = urls.splitlines()
     
-    img_path = Path("img")
+    img_path = Path("img-seperated")
     img_path.mkdir(exist_ok=True)
 
     await download_images(urls, img_path)
